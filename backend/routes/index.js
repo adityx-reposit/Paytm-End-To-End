@@ -1,8 +1,8 @@
-import { Router } from "express";
-const userRouter = require("./user")
+import express from 'express';
+import App from '../../src/App';
+const userRouter = require("./user");
 
-const router = express.Router()
-
+const router = express.Router();
 router.use("/user",userRouter);
 
 
